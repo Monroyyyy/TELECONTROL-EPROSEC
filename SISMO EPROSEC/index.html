@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte Sísmico - TELECONTROL EPROSEC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>TELECONTROL EPROSEC</h1>
+    <h2>Reporte de Usuarios Afectados por Evento Sísmico</h2>
+    <p>Fecha: 14/01/2026 | Hora: 11:32 | Estatus: <span class="critico">Afectación Detectada</span></p>
+</header>
+
+<section class="cards">
+    <div class="card">Zonas afectadas<br><strong>5</strong></div>
+    <div class="card">Subestaciones<br><strong>18</strong></div>
+    <div class="card">Circuitos<br><strong>42</strong></div>
+    <div class="card">Usuarios<br><strong>125,430</strong></div>
+</section>
+
+<section class="zonas">
+    <h3>Zonas</h3>
+    <div class="zona critico" onclick="mostrarZona('Benito Juarez')">
+        Benito Juárez<br>Cir: 5 | Usu: 14,200
+    </div>
+    <div class="zona parcial" onclick="mostrarZona('Chapingo')">
+        Chapingo<br>Cir: 3 | Usu: 5,600
+    </div>
+    <div class="zona normal">
+        Polanco<br>Cir: 0 | Usu: 0
+    </div>
+</section>
+
+<section id="detalle">
+    <h3>Detalle de Zona</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Subestación</th>
+                <th>Estado</th>
+                <th>Circuitos</th>
+                <th>Usuarios</th>
+            </tr>
+        </thead>
+        <tbody id="tablaZona"></tbody>
+    </table>
+</section>
+
+<section class="grafica">
+    <canvas id="graficaCircuitos"></canvas>
+</section>
+
+<button onclick="descargar()">📄 Descargar Reporte (Maqueta)</button>
+
+<script src="script.js"></script>
+</body>
+</html>
