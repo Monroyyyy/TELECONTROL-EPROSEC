@@ -5,65 +5,119 @@ body {
     padding: 20px;
 }
 
+/* ===== ENCABEZADO ===== */
 header {
     background: #003366;
     color: white;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+/* ===== CARDS ===== */
 .cards {
     display: flex;
     gap: 15px;
-    margin: 20px 0;
+    margin-bottom: 25px;
 }
 
 .card {
     background: white;
-    padding: 20px;
     flex: 1;
+    padding: 20px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.zonas {
-    margin: 20px 0;
+/* ===== ZONAS ===== */
+.zonas h3 {
+    margin-bottom: 10px;
 }
 
 .zona {
     display: inline-block;
+    width: 220px;
     padding: 15px;
-    margin: 5px;
-    border-radius: 8px;
+    margin: 8px;
+    border-radius: 10px;
     cursor: pointer;
     color: white;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
 }
 
-.critico { background: #c0392b; }
-.parcial { background: #f39c12; }
-.normal  { background: #27ae60; }
+.zona:hover {
+    transform: scale(1.05);
+}
 
+/* ===== ESTADOS ===== */
+.critico {
+    background: #c0392b;
+}
+
+.parcial {
+    background: #f39c12;
+}
+
+.normal {
+    background: #27ae60;
+}
+
+/* ===== TABLA ===== */
 table {
     width: 100%;
     background: white;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-th, td {
-    border: 1px solid #ddd;
+th {
+    background: #003366;
+    color: white;
+    padding: 10px;
+}
+
+td {
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
+/* ===== GRÁFICA ===== */
+.grafica {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ===== BOTÓN ===== */
 button {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 25px;
+    padding: 15px 25px;
     font-size: 16px;
     background: #003366;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
+}
+
+button:hover {
+    background: #002244;
 }
