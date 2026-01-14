@@ -1,11 +1,13 @@
 const datosZonas = {
     "Aeropuerto": [
-        { se: "AER-01", estado: "Crítico", circuitos: 4, usuarios: 8200 },
-        { se: "AER-02", estado: "Parcial", circuitos: 2, usuarios: 4100 }
+        { se: "MZA", estado: "Crítico", circuitos: 4, usuarios: 8200 },
+        { se: "MER", estado: "Parcial", circuitos: 2, usuarios: 4100 }
     ],
     "Benito Juarez": [
-        { se: "BJ-01", estado: "Crítico", circuitos: 3, usuarios: 6200 },
-        { se: "BJ-03", estado: "Crítico", circuitos: 2, usuarios: 4800 }
+        { se: "COY", estado: "Crítico", circuitos: 3, usuarios: 6200 },
+        { se: "NAR", estado: "Crítico", circuitos: 2, usuarios: 4800 },
+        { se: "TYA", estado: "Crítico", circuitos: 1, usuarios: 4800 },
+        { se: "VER", estado: "Crítico", circuitos: 2, usuarios: 4800 }
     ],
     "Chapingo": [
         { se: "CH-02", estado: "Parcial", circuitos: 3, usuarios: 5600 }
@@ -75,3 +77,4 @@ function mostrarZona(zona) {
 function descargar() {
     alert("Maqueta demostrativa: aquí TI integrará la generación del oficio en PDF.");
 }
+
